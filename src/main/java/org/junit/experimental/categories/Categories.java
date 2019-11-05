@@ -146,7 +146,7 @@ public class Categories extends Suite {
                                                     boolean matchAnyExclusions, Set<Class<?>> exclusions) {
             return new CategoryFilter(matchAnyInclusions, inclusions, matchAnyExclusions, exclusions);
         }
-
+        
         @Deprecated
         public CategoryFilter(Class<?> includedCategory, Class<?> excludedCategory) {
             includedAny = true;
