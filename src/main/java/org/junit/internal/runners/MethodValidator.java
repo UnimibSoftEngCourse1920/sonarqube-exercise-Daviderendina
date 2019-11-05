@@ -35,7 +35,7 @@ public class MethodValidator {
         validateTestMethods(Test.class, false);
 
         List<Method> methods = testClass.getAnnotatedMethods(Test.class);
-        if (methods.size() == 0) {
+        if (methods.isEmpty()) {
             errors.add(new Exception("No runnable methods"));
         }
     }
